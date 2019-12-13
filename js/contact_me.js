@@ -40,12 +40,6 @@ $(function() {
             .append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
-
-          gtag('event', contactmebtn_clicked, {
-               'event_category': btn_clicked,
-               'event_label': ContactMe,
-              'value': 1
-              });
         },
         error: function() {
           // Fail message
@@ -60,6 +54,7 @@ $(function() {
         complete: function() {
           setTimeout(function() {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+            window.location.href = "message-sent.html"
           }, 1000);
         }
       });
