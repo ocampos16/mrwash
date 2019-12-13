@@ -40,6 +40,7 @@ $(function() {
             .append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
+          $(this).load("message-sent.html");
         },
         error: function() {
           // Fail message
@@ -54,7 +55,6 @@ $(function() {
         complete: function() {
           setTimeout(function() {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-            $(this).load("message-sent.html");
           }, 1000);
         }
       });
