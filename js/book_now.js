@@ -11,9 +11,8 @@ $(function() {
         var name = $("input#name").val();
         var phone = $("input#phone").val();
         var email = $("input#email").val();
-        var date = $("input#date").val();
-        
-        var date = $("textarea#message").val();
+        var booking_date = $("input#booking_date").val();
+        var booking_time = $("input#booking_time").val();
         var firstName = name; // For Success/Failure Message
         // Check for white space in name for Success/Fail message
         if (firstName.indexOf(' ') >= 0) {
