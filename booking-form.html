@@ -98,7 +98,12 @@
               <input type="time" id="booking_time" class="form-control" required data-validation-required-message="Please enter your boooking time.">
             </div>
           </div>
-          
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Message:</label>
+              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+            </div>
+          </div>
           <div id="success"></div>
           <!-- For success/fail messages -->
           <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
@@ -123,7 +128,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Booking form JavaScript -->
-  
+  <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/book_success.js"></script>
   
 
